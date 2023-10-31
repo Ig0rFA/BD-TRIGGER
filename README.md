@@ -14,6 +14,7 @@
     (NOW(),'Cliente 2'),
     (NOW(),	'Cliente 3');
     ```
+![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201.png)
 ## ETAPA 1-2
 -- Criação de TRIGGER
   ```
@@ -27,17 +28,19 @@
     $
     DELIMITER ; 
     ```
+    ![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201-2.png)
 ## ETAPA 1-3:
 -- Teste da Trigger:
 -- Inserção de um novo Registro na tabela "Pedidos" sem fornecer a data
 ```
     INSERT INTO Pedidos (NomeCliente) VALUES ('NOVO CLIENTE');
 ```
+![exer2](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201-3.png)
 -- Consulta para verificar os resultados
 ```
     SELECT * FROM Pedidos;
 ```
-![exer2]()
+![exer2](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201-4.png)
 
 # FILMES
 
@@ -51,7 +54,7 @@
     minutos  INT
     );
 ```
-  ![exer3]()
+  ![exer3](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Filmes%201-1.png)
 
 ## ETAPA 2-2: 
 -- código que cria uma trigger associada a tabela Filmes:
@@ -67,6 +70,8 @@
      END$   
      DELIMITER ;
  ```
+![exer3](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Filmes%201-2.png)
+
 ## ETAPA 2-3: 
  -- inserção dos itens abaixo:
 ```
@@ -84,6 +89,7 @@
 
 
 ```
+![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Filmes%201-3.png)
 ## ETAPA 2-4:
 -- criando uma exception e a lançamos como o comando signal.
 ```
@@ -103,6 +109,7 @@
     DELIMITER ;
 
 ```
+![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Filmes%201-5.png)
 ## ETAPA 2-5:
 -- criar uma tabela de informação sobre ocorrências, conforme o código abaixo:
 ```
@@ -127,6 +134,7 @@
 
     SELECT * FROM Log_deletions; 
 ```
+![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Filmes%201-6.png)
 -- Ao realizar esse processo teremos o seguinte resultado:
 ```
     INSERT INTO Filmes (titulo,minutos) VALUES ("The Terrible trigger", 120);
@@ -141,3 +149,4 @@
 
    SELECT * FROM Filmes;
    ```
+![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Filmes%201-7.png)
