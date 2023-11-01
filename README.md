@@ -1,5 +1,7 @@
 # BD-TRIGGER
 
+Nesta atividade o intuito foi evidenciar os possiveis erros, por isso pode observar que em alguns codigos abaixo contem erros.
+
 ## ETAPA 1-1:
  Criação das Tabelas 
 ```
@@ -13,11 +15,14 @@
     (NOW(), 'Cliente 1'),
     (NOW(),'Cliente 2'),
     (NOW(),	'Cliente 3');
+
     ```
-![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201.png)
+![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201.png).
+
 ## ETAPA 1-2
 -- Criação de TRIGGER
-  ```
+
+```
     DELIMITER $
     CREATE TRIGGER RegistroDataCriacaoPedido
     BEFORE INSERT ON Pedidos
@@ -27,7 +32,7 @@
     END;
     $
     DELIMITER ; 
-    ```
+     ```
     ![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201-2.png)
 ## ETAPA 1-3:
 -- Teste da Trigger:
