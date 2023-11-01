@@ -21,7 +21,6 @@ Nesta atividade o intuito foi evidenciar os possiveis erros, por isso pode obser
 
 ## ETAPA 1-2
 -- Criação de TRIGGER:
-
     DELIMITER $
     CREATE TRIGGER RegistroDataCriacaoPedido
     BEFORE INSERT ON Pedidos
@@ -31,7 +30,6 @@ Nesta atividade o intuito foi evidenciar os possiveis erros, por isso pode obser
     END;
     $
     DELIMITER ;
-
     ![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201-2.png)
 ## ETAPA 1-3:
 -- Teste da Trigger:
