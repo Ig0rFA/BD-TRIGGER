@@ -3,8 +3,8 @@
 Nesta atividade o intuito foi evidenciar os possiveis erros, por isso pode observar que em alguns codigos abaixo contem erros.
 
 ## ETAPA 1-1:
- Criação das Tabelas 
-```
+ Criação das Tabelas:
+
     CREATE TABLE Pedidos(
     IDPedido INT AUTO_INCREMENT PRIMARY KEY,
     DataPedido DATETIME,
@@ -20,9 +20,8 @@ Nesta atividade o intuito foi evidenciar os possiveis erros, por isso pode obser
 ![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201.png).
 
 ## ETAPA 1-2
--- Criação de TRIGGER
+-- Criação de TRIGGER:
 
-```
     DELIMITER $
     CREATE TRIGGER RegistroDataCriacaoPedido
     BEFORE INSERT ON Pedidos
@@ -31,8 +30,8 @@ Nesta atividade o intuito foi evidenciar os possiveis erros, por isso pode obser
 	    SET NEW.DataPedido = NOW();
     END;
     $
-    DELIMITER ; 
-     ```
+    DELIMITER ;
+
     ![exer1](https://github.com/Ig0rFA/BD-TRIGGER/blob/main/BD-TRIGGER/Pedidos%201-2.png)
 ## ETAPA 1-3:
 -- Teste da Trigger:
